@@ -11,9 +11,9 @@ const clientLogos = [
 
 export default function TrustStrip() {
   return (
-    <section className="bg-secondary py-12">
+    <section className="bg-transparent py-12">
       <div className="container flex flex-col items-center gap-8">
-        <Badge variant="secondary" className="text-sm px-4 py-2">500+ pieces delivered</Badge>
+        <Badge variant="secondary" className="text-sm px-4 py-2 bg-card/50">500+ pieces delivered</Badge>
         <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-6">
           {clientLogos.map((client) => (
             <Image

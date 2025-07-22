@@ -2,11 +2,11 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 const ComparisonCard = ({ title, content, isFramework = false }: { title: string, content: React.ReactNode, isFramework?: boolean }) => (
-  <Card className={`w-full ${isFramework ? "border-primary shadow-lg" : ""}`}>
+  <Card className={`w-full bg-card/50 ${isFramework ? "border-primary shadow-lg" : ""}`}>
     <CardHeader>
       <CardTitle className={`font-headline text-xl ${isFramework ? "text-primary" : ""}`}>{title}</CardTitle>
     </CardHeader>
-    <CardContent className="text-sm text-muted-foreground space-y-2 prose prose-sm">
+    <CardContent className="text-sm text-muted-foreground space-y-2 prose prose-sm prose-invert">
       {content}
     </CardContent>
   </Card>
@@ -14,10 +14,10 @@ const ComparisonCard = ({ title, content, isFramework = false }: { title: string
 
 export default function Comparison() {
   return (
-    <section id="comparison" className="bg-secondary py-20 md:py-32">
+    <section id="comparison" className="bg-transparent py-20 md:py-32">
       <div className="container">
         <div className="text-center mb-16">
-          <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tighter">The Framework Difference</h2>
+          <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight">The Framework Difference</h2>
           <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">
             Generic AI gives you words. Our framework-driven approach gives you results. See the side-by-side comparison.
           </p>

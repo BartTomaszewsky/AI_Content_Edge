@@ -34,17 +34,17 @@ const Rating = () => (
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="bg-secondary py-20 md:py-32">
+    <section id="testimonials" className="bg-transparent py-20 md:py-32">
       <div className="container">
         <div className="text-center mb-16">
-          <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tighter">Trusted by Businesses Like Yours</h2>
+          <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight">Trusted by Businesses Like Yours</h2>
           <p className="text-lg text-muted-foreground mt-4 max-w-2xl mx-auto">
             Don&apos;t just take our word for it. Here&apos;s what our clients have to say about their results.
           </p>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial) => (
-            <Card key={testimonial.name} className="flex flex-col justify-between shadow-md">
+            <Card key={testimonial.name} className="flex flex-col justify-between shadow-md bg-card/50">
               <CardContent className="pt-6">
                 <Rating />
                 <p className="mt-4 text-muted-foreground">&quot;{testimonial.quote}&quot;</p>
@@ -63,7 +63,7 @@ export default function Testimonials() {
           ))}
         </div>
         <div className="mt-16">
-            <Card className="bg-primary text-primary-foreground p-8 md:p-12 shadow-xl">
+            <Card className="bg-primary/80 text-primary-foreground p-8 md:p-12 shadow-xl">
                 <div className="grid md:grid-cols-3 gap-8 items-center">
                     <div className="md:col-span-2">
                         <h3 className="font-headline text-2xl font-bold">Mini Case Study: How [Company] Increased Website Traffic 150%</h3>

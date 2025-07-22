@@ -39,14 +39,14 @@ export default function Pricing() {
     <section id="pricing" className="py-20 md:py-32">
       <div className="container">
         <div className="text-center mb-16">
-          <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tighter">Flexible Plans for Every Business</h2>
+          <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight">Flexible Plans for Every Business</h2>
           <p className="text-lg text-muted-foreground mt-4 max-w-2xl mx-auto">
             Choose a one-off campaign or stock up on credits for long-term growth. No subscriptions, no hidden fees.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {pricingTiers.map((tier) => (
-            <Card key={tier.name} className={`flex flex-col ${tier.isPrimary ? 'border-primary shadow-2xl' : 'shadow-md'}`}>
+            <Card key={tier.name} className={`flex flex-col bg-card/50 ${tier.isPrimary ? 'border-primary shadow-2xl' : 'shadow-md'}`}>
               <CardHeader className="relative">
                 {tier.badge && (
                   <Badge className="absolute top-0 -translate-y-1/2 bg-accent text-accent-foreground">{tier.badge}</Badge>
@@ -68,7 +68,7 @@ export default function Pricing() {
                 </ul>
               </CardContent>
               <CardFooter>
-                <Button asChild size="lg" className={`w-full ${tier.isPrimary ? 'bg-accent hover:bg-accent/90 text-accent-foreground' : ''}`}>
+                <Button asChild size="lg" className={`w-full ${tier.isPrimary ? 'bg-primary hover:bg-primary/90 text-primary-foreground' : ''}`}>
                   <Link href="#lead-capture">{tier.cta}</Link>
                 </Button>
               </CardFooter>
