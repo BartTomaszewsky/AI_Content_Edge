@@ -20,10 +20,10 @@ export default function Hero() {
         <div className="relative aspect-video rounded-xl shadow-lg">
           <Image
             src="https://placehold.co/600x400.png"
-            alt="AI Content Creation Process"
+            alt="Illustration showing a brain connected to a computer, symbolizing AI-powered content creation"
             fill
             className="rounded-xl object-cover"
-            data-ai-hint="content creation"
+            data-ai-hint="ai content"
           />
         </div>
       </div>

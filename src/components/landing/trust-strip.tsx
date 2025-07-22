@@ -2,11 +2,11 @@ import { Badge } from "@/components/ui/badge"
 import Image from "next/image"
 
 const clientLogos = [
-  { name: "Client 1", logo: "https://placehold.co/120x40.png", dataAiHint: "company logo" },
-  { name: "Client 2", logo: "https://placehold.co/120x40.png", dataAiHint: "tech company" },
-  { name: "Client 3", logo: "https://placehold.co/120x40.png", dataAiHint: "startup logo" },
-  { name: "Client 4", logo: "https://placehold.co/120x40.png", dataAiHint: "saas company" },
-  { name: "Client 5", logo: "https://placehold.co/120x40.png", dataAiHint: "agency logo" },
+  { name: "NovaWorks", logo: "https://placehold.co/120x40.png", dataAiHint: "abstract logo" },
+  { name: "Zenith Labs", logo: "https://placehold.co/120x40.png", dataAiHint: "tech logo" },
+  { name: "Apex Industries", logo: "https://placehold.co/120x40.png", dataAiHint: "minimalist logo" },
+  { name: "FusionCore", logo: "https://placehold.co/120x40.png", dataAiHint: "modern logo" },
+  { name: "QuantumLeap", logo: "https://placehold.co/120x40.png", dataAiHint: "geometric logo" },
 ]
 
 export default function TrustStrip() {
