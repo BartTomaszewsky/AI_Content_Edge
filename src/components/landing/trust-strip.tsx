@@ -1,11 +1,11 @@
 import Image from "next/image"
 
 const clientLogos = [
-  { name: "Logationb", logo: "https://firebasestorage.googleapis.com/v0/b/stedi-demo-1.appspot.com/o/e5b0c791-749e-4a6c-9549-e23a4a0e9aa7.png?alt=media&token=e6e2f183-1a48-4e8a-84f6-59c2a3949f2b", dataAiHint: "abstract grid logo" },
-  { name: "NextSytic", logo: "https://firebasestorage.googleapis.com/v0/b/stedi-demo-1.appspot.com/o/21a50a3b-9e4a-43c2-9e1e-2895f3b7d14a.png?alt=media&token=c41f7e34-5e1a-4d7a-8f5b-11d2e1a3b7d1", dataAiHint: "geometric shape logo" },
-  { name: "TechWave", logo: "https://firebasestorage.googleapis.com/v0/b/stedi-demo-1.appspot.com/o/c241b7e1-8d2a-4a1e-8e8e-8a7e4a1e8e8e.png?alt=media&token=a8e1e7e4-1e8e-4a1e-8e8e-8a7e4a1e8e8e", dataAiHint: "tech text logo" },
-  { name: "Cloud monogram", logo: "https://firebasestorage.googleapis.com/v0/b/stedi-demo-1.appspot.com/o/8e8e8a7e-4a1e-8e8e-8a7e-4a1e8e8e8a7e.png?alt=media&token=c1a3b5a7-96a1-4202-a74e-096d2719c237", dataAiHint: "cloud x logo" },
-  { name: "Refresh Star", logo: "https://firebasestorage.googleapis.com/v0/b/stedi-demo-1.appspot.com/o/9e1e-2895f3b7d14a-21a50a3b-9e4a-43c2.png?alt=media&token=571de43a-7ed4-4f01-8f43-a6078345164d", dataAiHint: "refresh star logo" },
+  { name: "Logationb", logo: "https://placehold.co/120x40.png", dataAiHint: "abstract grid" },
+  { name: "NextSytic", logo: "https://placehold.co/120x40.png", dataAiHint: "geometric shape" },
+  { name: "TechWave", logo: "https://placehold.co/120x40.png", dataAiHint: "tech logo" },
+  { name: "Cloud Monogram", logo: "https://placehold.co/120x40.png", dataAiHint: "cloud monogram" },
+  { name: "Refresh Star", logo: "https://placehold.co/120x40.png", dataAiHint: "refresh star" },
 ]
 
 export default function TrustStrip() {
