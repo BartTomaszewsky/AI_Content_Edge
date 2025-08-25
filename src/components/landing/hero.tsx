@@ -24,11 +24,11 @@ export default function Hero() {
         </div>
         <div className="relative aspect-video rounded-xl shadow-lg">
           <Image
-            src="https://placehold.co/600x400.png"
-            alt="An abstract image showing a chaotic, tangled scribble on one side transforming into a clean, structured set of elegant lines on the other, symbolizing the clarification of ideas."
+            src="https://firebasestorage.googleapis.com/v0/b/stedi-demo-1.appspot.com/o/14e24227-81c8-4770-9831-29177a56a6ac.png?alt=media&token=d120a1c1-432d-4293-87a3-4a11b626e5d8"
+            alt="An abstract image of a sphere with glowing energy lines, representing data and insights."
             fill
             className="rounded-xl object-cover"
-            data-ai-hint="transformation idea"
+            data-ai-hint="abstract energy data"
           />
         </div>
       </div>
