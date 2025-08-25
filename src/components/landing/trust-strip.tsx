@@ -1,30 +1,18 @@
 import Image from "next/image"
 
-const clientLogos = [
-  { name: "Logationb", logo: "https://placehold.co/120x40.png", dataAiHint: "abstract grid" },
-  { name: "NextSytic", logo: "https://placehold.co/120x40.png", dataAiHint: "geometric shape" },
-  { name: "TechWave", logo: "https://placehold.co/120x40.png", dataAiHint: "tech logo" },
-  { name: "Cloud Monogram", logo: "https://placehold.co/120x40.png", dataAiHint: "cloud monogram" },
-  { name: "Refresh Star", logo: "https://placehold.co/120x40.png", dataAiHint: "refresh star" },
-]
-
 export default function TrustStrip() {
   return (
     <section className="bg-transparent py-12">
       <div className="container flex flex-col items-center gap-8">
         <h3 className="text-center font-headline text-lg text-muted-foreground">Powering content for innovative brands and startups</h3>
-        <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-6">
-          {clientLogos.map((client) => (
-            <Image
-              key={client.name}
-              src={client.logo}
-              alt={`${client.name} logo`}
-              width={120}
-              height={40}
-              className="opacity-60 hover:opacity-100 transition-opacity"
-              data-ai-hint={client.dataAiHint}
-            />
-          ))}
+        <div className="w-full overflow-hidden">
+          <Image
+            src="https://i.postimg.cc/5t0wy7Wn/Zrzut-ekranu-2025-08-25-233622.png"
+            alt="Client logos strip"
+            width={1000} // Adjust width and height as needed to fit the image and desired animation
+            height={60}
+            className="animate-slide"
+          />
         </div>
       </div>
     </section>
