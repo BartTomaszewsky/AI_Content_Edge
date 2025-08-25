@@ -24,7 +24,7 @@ export default function Hero() {
         </div>
         <div className="relative aspect-video rounded-xl shadow-lg">
           <Image
-            src="https://i.postimg.cc/5YZ2K4pS/image.png"
+            src="https://i.postimg.cc/DzJT2h06/Zrzut-ekranu-2025-08-25-134004.png"
             alt="Hero image showing a dashboard with charts and graphs, representing data-driven content results."
             fill
             className="rounded-xl object-cover"
