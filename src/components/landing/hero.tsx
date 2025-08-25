@@ -24,11 +24,11 @@ export default function Hero() {
         </div>
         <div className="relative aspect-video rounded-xl shadow-lg">
           <Image
-            src="https://placehold.co/600x400.png"
-            alt="An abstract image showing a chaotic, tangled scribble on one side transforming into a clean, structured set of elegant lines on the other, symbolizing the clarification of ideas."
+            src="https://i.postimg.cc/5YZ2K4pS/image.png"
+            alt="Hero image showing a dashboard with charts and graphs, representing data-driven content results."
             fill
             className="rounded-xl object-cover"
-            data-ai-hint="transformation idea"
+            data-ai-hint="dashboard data analytics"
           />
         </div>
       </div>
