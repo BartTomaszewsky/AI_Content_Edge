@@ -7,29 +7,29 @@ import {
   
   const faqs = [
     {
-      question: "How is AI content different from human-written content?",
+      question: "Is this just another AI content generator?",
       answer:
-        "Our AI uses sophisticated frameworks like AIDA and PAS, models trained on top-performing marketing copy. While a human writer is excellent, our AI provides top-tier, structured content at a fraction of the time and cost, which we then have human-reviewed for brand voice and accuracy.",
+        "Not at all. We combine advanced AI-driven by proven marketing frameworks (like AIDA and PAS) with a human review process. This ensures the content is not only high-quality and structured for results, but also perfectly aligned with your brand's unique voice.",
     },
     {
-      question: "Will the content be unique and plagiarism-free?",
+      question: "Is the content truly unique and safe to use?",
       answer:
-        "Absolutely. Every piece of content is generated uniquely for your project and passed through multiple plagiarism checks. We guarantee 100% original content.",
+        "Yes. Every piece of content is generated on a per-project basis and rigorously checked against plagiarism. We guarantee 100% original content that you can confidently publish.",
     },
     {
-      question: "How quickly can I get my content package?",
+      question: "How fast is the turnaround?",
       answer:
-        "Our standard delivery time is 48 hours for the Starter Campaign. The Growth Package offers priority delivery, often within 24-36 hours per credit used.",
+        "Our standard delivery for a full Starter Campaign is just 48 hours. The Growth Package includes priority delivery, often completed within 24-36 hours per campaign credit.",
     },
     {
-      question: "What if I'm not satisfied with the results?",
+      question: "What if I need changes to the content?",
       answer:
-        "We offer one round of revisions on every content piece. Our goal is your complete satisfaction. We'll work with you to ensure the copy aligns perfectly with your vision and goals.",
+        "Your satisfaction is our priority. We include one round of revisions with every content piece. We'll collaborate with you to make sure the copy perfectly matches your vision and achieves your goals.",
     },
     {
-        question: "Can I specify my industry and target audience?",
+        question: "How do you tailor the content to my specific business?",
         answer:
-          "Yes. During the checkout process, you'll provide details about your business, industry, target audience, and specific goals. This information is crucial for our AI to tailor the content effectively."
+          "The process starts with you. Our lead form captures key details about your business, industry, target audience, and campaign goals. This information is fundamental to how our AI tailors the content specifically for you."
     }
   ]
   
@@ -39,10 +39,10 @@ import {
         <div className="container max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tighter">
-              Frequently Asked Questions
+              Your Questions, Answered
             </h2>
             <p className="text-lg text-muted-foreground mt-4">
-              Have questions? We have answers.
+              Everything you need to know before you get started.
             </p>
           </div>
           <Accordion type="single" collapsible className="w-full">
@@ -61,4 +61,3 @@ import {
       </section>
     )
   }
-  

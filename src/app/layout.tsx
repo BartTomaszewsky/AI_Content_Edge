@@ -3,9 +3,9 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: "AI Content Edge | AI That Writes Like a Pro, Not a Robot",
+  title: "AI Content Edge | Human-Quality Content, AI-Powered Speed",
   description:
-    "Get high-quality, framework-driven marketing copy in 48 hours. See the difference our AI-powered content makes for your business.",
+    "Stop getting generic AI content. Our framework-driven approach delivers strategic marketing copy that converts in 48 hours. See the difference.",
 };
 
 export default function RootLayout({
@@ -23,7 +23,7 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Manrope:wght@500;700;800&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;700&display=swap"
           rel="stylesheet"
         />
       </head>

@@ -65,14 +65,12 @@ export default function LeadForm() {
   const onSubmit = (data: z.infer<typeof formSchema>) => {
     console.log("Form submitted:", data);
     toast({
-      title: "🚀 Order Sent!",
-      description: "Thank you! We've received your request and will be in touch shortly to confirm the details.",
+      title: "🚀 Request Sent!",
+      description: "Thank you for your interest! We've received your request and will be in touch within 24 hours.",
       variant: "default",
       duration: 5000,
     });
-    // Here you would typically handle the payment processing with Stripe
-    // For this mock, we'll just reset the form and go to a success state.
-    setStep(totalSteps + 1); // Go to success screen
+    setStep(totalSteps + 1); 
   };
 
   const handleNextStep = async () => {
@@ -102,11 +100,11 @@ export default function LeadForm() {
                         </div>
                         <CardTitle className="font-headline text-3xl mt-4">Thank You!</CardTitle>
                         <CardDescription>
-                        Your content request is in! We&apos;ll be in touch within 24 hours to get started.
+                        Your request has been sent. We'll be in touch within 24 hours to get started on your content!
                         </CardDescription>
                     </CardHeader>
                     <CardFooter className="flex justify-center">
-                        <Button onClick={() => { form.reset(); setStep(1); }}>Start a New Order</Button>
+                        <Button onClick={() => { form.reset(); setStep(1); }}>Start Another Request</Button>
                     </CardFooter>
                 </Card>
             </div>
@@ -121,9 +119,9 @@ export default function LeadForm() {
         <Card className="shadow-lg">
           <CardHeader>
             <Progress value={(step / totalSteps) * 100} className="mb-4" />
-            <CardTitle className="font-headline text-3xl">Get Your Content</CardTitle>
+            <CardTitle className="font-headline text-3xl">Start Your Project</CardTitle>
             <CardDescription>
-              Just a few questions to tailor the perfect content for your business.
+              A few quick questions to craft the perfect content for your business.
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -136,7 +134,7 @@ export default function LeadForm() {
                       name="businessType"
                       render={({ field }) => (
                         <FormItem className="space-y-3">
-                          <FormLabel className="text-lg font-semibold">What type of business do you run?</FormLabel>
+                          <FormLabel className="text-lg font-semibold">What type of business are you in?</FormLabel>
                           <FormControl>
                             <RadioGroup
                               onValueChange={field.onChange}
@@ -162,7 +160,7 @@ export default function LeadForm() {
                       name="challenge"
                       render={({ field }) => (
                         <FormItem className="space-y-3">
-                          <FormLabel className="text-lg font-semibold">What&apos;s your biggest content challenge?</FormLabel>
+                          <FormLabel className="text-lg font-semibold">What's your biggest content challenge?</FormLabel>
                           <FormControl>
                           <RadioGroup
                               onValueChange={field.onChange}
@@ -191,7 +189,7 @@ export default function LeadForm() {
                     name="budget"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="text-lg font-semibold">What&apos;s your monthly content budget?</FormLabel>
+                        <FormLabel className="text-lg font-semibold">What is your monthly content budget?</FormLabel>
                          <FormControl>
                             <div className="pt-8">
                                 <Slider
@@ -216,7 +214,7 @@ export default function LeadForm() {
                             name="name"
                             render={({ field }) => (
                                 <FormItem>
-                                <FormLabel>Name</FormLabel>
+                                <FormLabel>Full Name</FormLabel>
                                 <FormControl>
                                     <Input placeholder="John Doe" {...field} />
                                 </FormControl>
@@ -229,7 +227,7 @@ export default function LeadForm() {
                             name="email"
                             render={({ field }) => (
                                 <FormItem>
-                                <FormLabel>Email</FormLabel>
+                                <FormLabel>Work Email</FormLabel>
                                 <FormControl>
                                     <Input placeholder="you@company.com" {...field} />
                                 </FormControl>
@@ -242,7 +240,7 @@ export default function LeadForm() {
                             name="phone"
                             render={({ field }) => (
                                 <FormItem>
-                                <FormLabel>Phone (Optional)</FormLabel>
+                                <FormLabel>Phone Number (Optional)</FormLabel>
                                 <FormControl>
                                     <Input placeholder="(123) 456-7890" {...field} />
                                 </FormControl>
@@ -303,8 +301,8 @@ export default function LeadForm() {
                         </Button>
                     )}
                     {step === totalSteps && (
-                        <Button type="submit" className="bg-accent hover:bg-accent/90 text-accent-foreground">
-                            Proceed to Checkout
+                        <Button type="submit" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+                            Submit Request
                         </Button>
                     )}
                 </div>
